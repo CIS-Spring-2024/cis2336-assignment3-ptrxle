@@ -1,0 +1,92 @@
+<html>
+    <title>
+        Order: Le's Restaurant
+    </title>
+    <head>
+        <link rel="stylesheet" href="../CSS/style.css">
+        
+    </head>
+    <header>
+        <br>
+        <h1>What are ordering today at Le's Restaurant?</h1>
+        <nav id="navbar01">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="order.html">Order </a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+            </nav>
+    </header>
+    <body>
+
+        <div class="order-container">
+        
+            <div class="order-image">
+                <img src="../Image/foodyay.jpg" alt="Order Image">
+            </div>
+            <div class="order-form-container">
+        <main class="content">
+            <form id="orderform">
+                <h2>Place Your Order Here!</h2>
+                <div class="form01">
+                    <label for="appetizer">Select Appetizer:</label>
+                    <select id="appetizer" name="appetizer">
+                        <option value="">--Choose an appetizer--</option>
+                        <option value="caprese">Caprese Salad</option>
+                        <option value="garlic">Garlic Bread</option>
+                    </select>
+                    <input type="number" id="appetizer-quantity" name="appetizer-quantity" placeholder="Quantity" min="1" max="10">
+                </div>
+    
+                <div class="form01">
+                    <label for="main-course">Select Main Course:</label>
+                    <select id="main-course" name="main-course">
+                        <option value="">--Choose a main course--</option>
+                        <option value="carbonara">Spaghetti Carbonara</option>
+                        <option value="pizza">Margherita Pizza</option>
+                        <option value="salmon">Grilled Salmon</option>
+                        <option value="tenderloin">Beef Tenderloin</option>
+                    </select>
+                    <input type="number" id="main-course-quantity" name="main-course-quantity" placeholder="Quantity" min="1" max="10">
+                </div>
+    
+                <div class="form01">
+                    <label for="dessert">Select Dessert:</label>
+                    <select id="dessert" name="dessert">
+                        <option value="">--Choose a dessert--</option>
+                        <option value="tiramisu">Tiramisu</option>
+                        <option value="cannoli">Cannoli</option>
+                    </select>
+                    <input type="number" id="dessert-quantity" name="dessert-quantity" placeholder="Quantity" min="1" max="10">
+                </div>
+    
+                <div class="form01">
+                    <label for="drinks">Select Drink:</label>
+                    <select id="drink" name="drink">
+                        <option value="">--Choose a drink--</option>
+                        <option value="espresso">Espresso</option>
+                        <option value="limoncello">Limoncello</option>
+                    </select>
+                    <input type="number" id="drink-quantity" name="drink-quantity" placeholder="Quantity" min="1" max="10">
+                </div>
+    
+                <button type="submit">Submit Order</button>
+                <p id="order-feedback" class="error"></p>
+            </form>
+        </main>
+        </div>
+    
+        <script src="../JavaScript/order.js"></script>
+                </div>
+            </form>
+        </main>
+    </body>
+
+       
+       <footer>
+        <p>&copy; 2024 Le's Restaurant. All rights reserved.</p>
+    </footer>
+
+</html>
